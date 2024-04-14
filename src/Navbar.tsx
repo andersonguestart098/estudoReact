@@ -10,7 +10,9 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import ImagemLogo from "./ImagemLogo";
+import ImagemLogo from "./logoPrefeitura.png";
+import MultipleSelectPlaceholder from "./botaoDropdown";
+
 
 const pages = ["Products", "Pricing", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -42,7 +44,8 @@ function ResponsiveAppBar() {
     <AppBar position="static" sx={{ backgroundColor: "#39393D" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <ImagemLogo src="./logoPrefeitura.png" alt="Logo da prefeitura" />
+        <img src={ImagemLogo} alt="Logo" style={{ marginRight: "10px", width: "50px" }} />
+        <MultipleSelectPlaceholder/>
           <Typography
             variant="h6"
             noWrap

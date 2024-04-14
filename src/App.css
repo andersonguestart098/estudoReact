@@ -81,3 +81,27 @@
   max-width: 100%;
   height: auto;
 }
+
+.paragrafo p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.paragrafo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conteudo2 {
+  background-color: "#F0F0F0";
+}
+
+.content-section2 {
+  display: flex;
+  justify-content: flex-start; /* Alinha os itens no início do container */
+}
+
+.content2 {
+  margin-left: 20px; /* Adiciona uma margem à esquerda para separar o conteúdo da borda da tela */
+}
