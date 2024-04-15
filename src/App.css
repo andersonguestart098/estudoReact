@@ -99,9 +99,44 @@
 
 .content-section2 {
   display: flex;
-  justify-content: flex-start; /* Alinha os itens no início do container */
+  justify-content: flex-end; /* Alinha a div no canto direito */
+  max-width: 800px;
+  margin-left: auto; /* Adiciona margem à esquerda para empurrar para o canto direito */
+}
+
+.content-section2 {
+  background-color: #f0f0f0; /* Define a cor de fundo cinza */
+  padding: 20px; /* Adiciona um espaçamento interno para separar o conteúdo do fundo */
+  width: 100%; /* Define a largura da div como 100% para ocupar todo o espaço disponível */
+  box-sizing: border-box; /* Garante que a largura definida inclua o padding */
+  display: flex;
+  justify-content: flex-end; /* Alinha a div no canto direito */
+  max-width: 800px; /* Define uma largura máxima para a div */
+  margin-left: auto; /* Adiciona margem à esquerda para empurrar para o canto direito */
+}
+
+.content-section2 {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content2 {
-  margin-left: 20px; /* Adiciona uma margem à esquerda para separar o conteúdo da borda da tela */
+  max-width: 800px;
+  padding-left: 20px; /* Adiciona um padding à esquerda para alinhar com a imagem */
+}
+
+.content2 h2 {
+  text-align: left; /* Alinha o título à esquerda */
+}
+
+.content2 p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+  .content2 {
+    max-width: 90%;
+  }
 }

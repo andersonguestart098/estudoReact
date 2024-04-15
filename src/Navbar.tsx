@@ -12,10 +12,12 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import ImagemLogo from "./logoPrefeitura.png";
 import MultipleSelectPlaceholder from "./botaoDropdown";
+import menu from "./menu.png";
+import iconeServicos from "./icone-cartaservicos.png";
+import iconeComunidade from "./iconeComunidade.png";
+import iconeCasa from "./iconecasa.png";
 
-
-const pages = ["Products", "Pricing", "Blog"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const settings = ["Entrar em contato", "Visitar grupo de apoio", "Mapas"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -44,8 +46,12 @@ function ResponsiveAppBar() {
     <AppBar position="static" sx={{ backgroundColor: "#39393D" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-        <img src={ImagemLogo} alt="Logo" style={{ marginRight: "10px", width: "50px" }} />
-        <MultipleSelectPlaceholder/>
+          <img
+            src={ImagemLogo}
+            alt="Logo"
+            style={{ marginRight: "10px", width: "40px" }}
+          />
+
           <Typography
             variant="h6"
             noWrap
@@ -61,7 +67,31 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           ></Typography>
-
+          <Button
+            component="a"
+            href="#iconeServicos"
+            sx={{ marginRight: "10px" }}
+          >
+            <img
+              src={iconeServicos}
+              alt="iconeServicos"
+              style={{ width: "35px" }}
+            />
+          </Button>
+          <Button
+            component="a"
+            href="#iconeComunidade"
+            sx={{ marginRight: "10px" }}
+          >
+            <img
+              src={iconeComunidade}
+              alt="iconeComunidade"
+              style={{ width: "35px" }}
+            />
+          </Button>
+          <Button component="a" href="#iconeCasa">
+            <img src={iconeCasa} alt="iconeCasa" style={{ width: "35px" }} />
+          </Button>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -88,13 +118,7 @@ function ResponsiveAppBar() {
               sx={{
                 display: { xs: "block", md: "none" },
               }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+            ></Menu>
           </Box>
 
           <Typography
@@ -113,22 +137,16 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           ></Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
-            ))}
-          </Box>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}></Box>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <img
+                  src={menu}
+                  alt="Logo"
+                  style={{ marginRight: "10px", width: "30px" }}
+                />
               </IconButton>
             </Tooltip>
             <Menu
