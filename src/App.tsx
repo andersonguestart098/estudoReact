@@ -6,7 +6,6 @@ import DataGridDemo from "./tabela";
 import ContentSection2 from "./ContentSection2";
 import SelectVariants from "./botaoDropdown";
 import ContentSection3 from "./ContentSection3";
-import Acordion from "./acordion";
 
 function App() {
   return (

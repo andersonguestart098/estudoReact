@@ -17,6 +17,8 @@ import iconeServicos from "./icone-cartaservicos.png";
 import iconeComunidade from "./iconeComunidade.png";
 import iconeCasa from "./iconecasa.png";
 import Acordion from "./acordion";
+import logoPrefeitura from "./logoPrefeitura.svg";
+import umCincoMeia from "./156.svg";
 
 const settings = ["Entrar em contato", "Visitar grupo de apoio", "Mapas"];
 
@@ -48,9 +50,9 @@ function ResponsiveAppBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <img
-            src={ImagemLogo}
+            src={logoPrefeitura}
             alt="Logo"
-            style={{ marginRight: "10px", width: "40px" }}
+            style={{ marginRight: "10px", width: "35px" }}
           />
 
           <Typography
@@ -76,7 +78,7 @@ function ResponsiveAppBar() {
             <img
               src={iconeServicos}
               alt="iconeServicos"
-              style={{ width: "35px" }}
+              style={{ width: "45px" }}
             />
           </Button>
           <Button
@@ -87,11 +89,11 @@ function ResponsiveAppBar() {
             <img
               src={iconeComunidade}
               alt="iconeComunidade"
-              style={{ width: "35px" }}
+              style={{ width: "45px" }}
             />
           </Button>
           <Button component="a" href="#iconeCasa">
-            <img src={iconeCasa} alt="iconeCasa" style={{ width: "35px" }} />
+            <img src={iconeCasa} alt="iconeCasa" style={{ width: "45px" }} />
           </Button>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -139,39 +141,19 @@ function ResponsiveAppBar() {
             }}
           ></Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}></Box>
-
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <img
-                  src={menu}
-                  alt="Logo"
-                  style={{ marginRight: "10px", width: "30px" }}
-                />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+          <Box
+            sx={{
+              flexGrow: 0,
+              img: {
+                marginRight: "10px",
+                width: "80px", // Fixa a largura em 80px
+                height: "auto", // Ajusta a altura automaticamente
+                maxWidth: "100%", // Garante que a imagem não exceda a largura do contêiner
+                maxHeight: "100%", // Garante que a imagem não exceda a altura do contêiner
+              },
+            }}
+          >
+            <img src={umCincoMeia} alt="Logo" />
           </Box>
         </Toolbar>
       </Container>
