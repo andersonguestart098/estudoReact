@@ -1,4 +1,4 @@
-/* App.css */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
 .App {
   font-family: Arial, sans-serif;
@@ -97,34 +97,21 @@
   background-color: "#F0F0F0";
 }
 
+/* Estilização básica do content-section2 */
 .content-section2 {
+  background-color: #f0f0f0; /* Cor de fundo cinza */
+  padding: 20px; /* Espaçamento interno */
+  width: 100%; /* Ocupa 100% da largura disponível */
+  box-sizing: border-box; /* O padding é incluído na largura total */
   display: flex;
-  justify-content: flex-end; /* Alinha a div no canto direito */
-  max-width: 800px;
-  margin-left: auto; /* Adiciona margem à esquerda para empurrar para o canto direito */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
 }
 
-.content-section2 {
-  background-color: #f0f0f0; /* Define a cor de fundo cinza */
-  padding: 20px; /* Adiciona um espaçamento interno para separar o conteúdo do fundo */
-  width: 100%; /* Define a largura da div como 100% para ocupar todo o espaço disponível */
-  box-sizing: border-box; /* Garante que a largura definida inclua o padding */
-  display: flex;
-  justify-content: flex-end; /* Alinha a div no canto direito */
-  max-width: 800px; /* Define uma largura máxima para a div */
-  margin-left: auto; /* Adiciona margem à esquerda para empurrar para o canto direito */
-}
-
-.content-section2 {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+/* Estilização do content2, o conteúdo real */
 .content2 {
-  max-width: 800px;
-  padding-left: 20px; /* Adiciona um padding à esquerda para alinhar com a imagem */
+  max-width: 800px; /* Largura máxima */
+  padding-left: 20px; /* Espaçamento interno à esquerda para evitar que o texto toque a borda */
 }
 
 .content2 h2 {
@@ -132,11 +119,49 @@
 }
 
 .content2 p {
-  text-align: justify;
+  text-align: justify; /* Justifica o texto do parágrafo */
 }
 
 @media screen and (max-width: 600px) {
   .content2 {
-    max-width: 90%;
+    max-width: 90%; /* Largura máxima em dispositivos menores */
+    padding-left: 10px; /* Ajuste do espaçamento interno à esquerda em telas menores */
   }
+}
+
+.content-section2 h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 35px;
+  color: #525257;
+  text-align: center;
+}
+
+.content-section h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 35px;
+  color: #525257;
+}
+
+.tabelaH2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 35px;
+  color: #525257;
+}
+
+.content-section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tituloListaImagens {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 35px;
+  color: #525257;
+}
+
+.Acordion h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 35px;
+  color: #525257;
 }

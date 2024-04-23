@@ -16,6 +16,7 @@ import menu from "./menu.png";
 import iconeServicos from "./icone-cartaservicos.png";
 import iconeComunidade from "./iconeComunidade.png";
 import iconeCasa from "./iconecasa.png";
+import Acordion from "./acordion";
 
 const settings = ["Entrar em contato", "Visitar grupo de apoio", "Mapas"];
 
@@ -174,6 +175,7 @@ function ResponsiveAppBar() {
           </Box>
         </Toolbar>
       </Container>
+      <Acordion />
     </AppBar>
   );
 }

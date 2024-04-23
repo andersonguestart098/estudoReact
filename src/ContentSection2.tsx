@@ -2,6 +2,7 @@ import React from "react";
 import imagem from "./dengue.jpg";
 import aedes from "./aedes.png";
 import grafico from "./grafico.png";
+import "./App.css";
 
 function ContentSection2() {
   return (

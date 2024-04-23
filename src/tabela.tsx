@@ -59,7 +59,9 @@ export default function DataGridDemo() {
       }}
     >
       <Box sx={{ width: "100%", maxWidth: "800px" }}>
-        <h2 style={{ paddingLeft: "10px" }}>Bairros com maiores Insidências</h2>
+        <h2 style={{ paddingLeft: "10px" }} className="tabelaH2">
+          Bairros com maiores Insidências
+        </h2>
         <div style={{ width: "100%" }}>
           <DataGrid
             rows={rows}
@@ -76,7 +78,7 @@ export default function DataGridDemo() {
         style={{
           width: "600px",
           maxWidth: "100%",
-          marginTop: "69px",
+          marginTop: "95px",
         }}
       />
     </Box>
