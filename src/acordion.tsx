@@ -73,6 +73,7 @@ export default function AccordionExpandDefault() {
               flexGrow: 1,
               display: "flex",
               alignItems: "center",
+              paddingLeft: "10px",
             }}
           >
             Serviços
