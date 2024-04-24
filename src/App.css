@@ -11,6 +11,7 @@
   background-color: #39393d;
   color: white;
   padding: 5px 20px;
+  position: fixed;
 }
 
 .navbar-logo img {
@@ -97,35 +98,33 @@
   background-color: "#F0F0F0";
 }
 
-/* Estilização básica do content-section2 */
 .content-section2 {
-  background-color: #f0f0f0; /* Cor de fundo cinza */
-  padding: 20px; /* Espaçamento interno */
-  width: 100%; /* Ocupa 100% da largura disponível */
-  box-sizing: border-box; /* O padding é incluído na largura total */
+  background-color: #f0f0f0;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  align-items: center; /* Centraliza o conteúdo verticalmente */
+  justify-content: center;
+  align-items: center;
 }
 
-/* Estilização do content2, o conteúdo real */
 .content2 {
-  max-width: 800px; /* Largura máxima */
-  padding-left: 20px; /* Espaçamento interno à esquerda para evitar que o texto toque a borda */
+  max-width: 800px;
+  padding-left: 20px;
 }
 
 .content2 h2 {
-  text-align: left; /* Alinha o título à esquerda */
+  text-align: left;
 }
 
 .content2 p {
-  text-align: justify; /* Justifica o texto do parágrafo */
+  text-align: justify;
 }
 
 @media screen and (max-width: 600px) {
   .content2 {
-    max-width: 90%; /* Largura máxima em dispositivos menores */
-    padding-left: 10px; /* Ajuste do espaçamento interno à esquerda em telas menores */
+    max-width: 90%;
+    padding-left: 10px;
   }
 }
 

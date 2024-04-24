@@ -16,13 +16,13 @@ export default function TitlebarImageList() {
       <ImageList
         sx={{
           width: { xs: "100%", md: "800px" },
-          height: "auto", // Allow variable height based on image aspect ratios
+          height: "auto",
           overflowY: "auto",
           margin: "auto",
         }}
-        cols={isXs ? 2 : 4} // 2 columns on xs screens, 4 columns on larger screens
-        rowHeight={"auto"} // Use 'auto' for natural image heights
-        gap={12} // Space between images
+        cols={isXs ? 2 : 4}
+        rowHeight={"auto"}
+        gap={12}
       >
         <ImageListItem key="Subheader" cols={isXs ? 2 : 4}>
           <ListSubheader component="div">
@@ -36,7 +36,7 @@ export default function TitlebarImageList() {
               srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
               alt={item.title}
               loading="lazy"
-              style={{ width: "100%", height: "100%", objectFit: "cover" }} // Ensure images cover their cells
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
             <ImageListItemBar
               title={item.title}

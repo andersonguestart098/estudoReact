@@ -140,10 +140,10 @@ function ResponsiveAppBar() {
               flexGrow: 0,
               img: {
                 marginRight: "10px",
-                width: "80px", // Fixa a largura em 80px
-                height: "auto", // Ajusta a altura automaticamente
-                maxWidth: "100%", // Garante que a imagem não exceda a largura do contêiner
-                maxHeight: "100%", // Garante que a imagem não exceda a altura do contêiner
+                width: "80px",
+                height: "auto",
+                maxWidth: "100%",
+                maxHeight: "100%",
               },
             }}
           >

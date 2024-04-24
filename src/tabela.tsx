@@ -55,7 +55,7 @@ export default function DataGridDemo() {
         gap: "20px",
         backgroundColor: "#f0f0f0",
         padding: "20px",
-        flexWrap: "wrap", // Permite que os itens sejam quebrados em várias linhas
+        flexWrap: "wrap",
       }}
     >
       <Box sx={{ width: "100%", maxWidth: "800px" }}>
