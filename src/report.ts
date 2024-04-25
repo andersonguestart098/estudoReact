@@ -7,11 +7,14 @@ const router = express.Router();
 router.post(
   "/",
   [
-    body("location").isString().withMessage("Location espera uma string"),
-    body("description")
+    body("localizacao").isString().withMessage("localizacao espera uma string"),
+    body("tipoArea").isString().withMessage("tipoArea espera uma string"),
+    body("descricao").isString().withMessage("descricao espera um boolen"),
+    body("tipo").isString().withMessage("tipo espera uma string"),
+    body("numeroTelefone")
       .isString()
-      .isLength({ min: 5 })
-      .withMessage("Description deve ter mais de 5 caracteres"),
+      .isLength({ min: 11 })
+      .withMessage("numeroTelefone deve ter mais de 11 caracteres"),
   ],
   async (req: Request, res: Response) => {
     const errors = validationResult(req);
@@ -19,12 +22,15 @@ router.post(
       return res.status(400).json({ errors: errors.array() });
     }
 
-    const { location, description } = req.body;
+    const { localizacao, tipoArea, descricao, tipo, numeroTelefone } = req.body;
     try {
       const report = await prisma.report.create({
         data: {
-          location,
-          description,
+          localizacao,
+          tipoArea,
+          descricao,
+          tipo,
+          numeroTelefone,
         },
       });
       res.status(201).json(report);
