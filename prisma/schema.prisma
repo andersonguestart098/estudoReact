@@ -25,3 +25,12 @@ model Report {
   
 }
 
+model User {
+  id        String   @id @default(uuid())
+  googleId  String   @unique
+  name      String?
+  email     String?  @unique
+  image     String?
+}
+
+

@@ -67,7 +67,7 @@ function ReportForm() {
     };
     try {
       const response = await axios.post(
-        "http://localhost:3001/report",
+        "https://localhost:3001/report",
         reportData
       );
       const result = response.data; // Axios já faz o parse do JSON

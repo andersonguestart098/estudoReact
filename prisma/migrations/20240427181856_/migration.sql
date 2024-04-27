@@ -8,3 +8,18 @@ CREATE TABLE "Report" (
     "tipo" TEXT NOT NULL,
     "numeroTelefone" TEXT NOT NULL
 );
+
+-- CreateTable
+CREATE TABLE "User" (
+    "id" TEXT NOT NULL PRIMARY KEY,
+    "googleId" TEXT NOT NULL,
+    "name" TEXT,
+    "email" TEXT,
+    "image" TEXT
+);
+
+-- CreateIndex
+CREATE UNIQUE INDEX "User_googleId_key" ON "User"("googleId");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "User_email_key" ON "User"("email");

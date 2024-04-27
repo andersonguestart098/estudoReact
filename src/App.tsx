@@ -8,6 +8,8 @@ import ContentSection3 from "./ContentSection3";
 import ReportTable from "./tabelaDados";
 import FloatingButton from "./botaoFormulario";
 import ReportForm from "./RportForm";
+import Login from "./login"
+import BotaoLoogin from "./botaoLogin"
 
 function App() {
   return (
@@ -28,8 +30,10 @@ function App() {
             }
           />
           <Route path="/report-form" element={<ReportForm />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
-        <FloatingButton />
+        <BotaoLoogin/>
+
       </div>
     </Router>
   );
