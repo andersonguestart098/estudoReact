@@ -39,6 +39,11 @@ function ResponsiveAppBar() {
     setAnchorElUser(null);
   };
 
+  interface MyComponentProps {
+    umCincoMeia: string;
+  }
+
+  
   return (
     <AppBar position="static" sx={{ backgroundColor: "#39393D" }}>
       <Container maxWidth="xl">
@@ -135,20 +140,7 @@ function ResponsiveAppBar() {
             }}
           ></Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}></Box>
-          <Box
-            sx={{
-              flexGrow: 0,
-              img: {
-                marginRight: "10px",
-                width: "80px",
-                height: "auto",
-                maxWidth: "100%",
-                maxHeight: "100%",
-              },
-            }}
-          >
-            <img src={umCincoMeia} alt="Logo" />
-          </Box>
+          
         </Toolbar>
       </Container>
       <Acordion />
